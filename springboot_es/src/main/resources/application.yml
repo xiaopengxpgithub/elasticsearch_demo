@@ -1,0 +1,12 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: springboot-es
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.1.121:9300,192.168.1.122:9300,192.168.1.123:9300 #注意9300端口是Java与es通信端口,9200是rest客户端端口
+      cluster-name: es-cluster01
